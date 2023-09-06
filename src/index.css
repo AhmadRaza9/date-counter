@@ -1,13 +1,100 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 10rem;
+}
+
+/* Styling for the input type text */
+input[type="text"] {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+/* Styling for the input type range */
+input[type="range"] {
+  width: 300px;
+  height: 10px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  width: 20px;
+  height: 20px;
+  background: #4caf50;
+  cursor: pointer;
+  appearance: none; /* This is to remove the default styling in Chrome */
+  border-radius: 50%;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 300px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+.btn {
+  height: 50px;
+  width: 50px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.1); /* Slightly enlarges the button when hovered */
+  cursor: pointer;
+}
+
+.btn-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.reset {
+  background-color: red;
+  border: 1px solid red;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  font-size: 17px;
+  cursor: pointer;
+}
+.reset:hover {
+  background-color: darkred;
+  border: 1px solid darkred;
 }
